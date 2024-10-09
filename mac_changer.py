@@ -2,13 +2,11 @@
 import subprocess
 import argparse
 import re
-import math
-import email
+
 
 original_mac = ""
 changed_mac = ""
-test_variable =""
-test_variable2 =""
+
 
 
 def main():
