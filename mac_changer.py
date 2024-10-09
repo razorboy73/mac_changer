@@ -59,6 +59,7 @@ def check_interface(interface):
 
 def change_mac(interface, new_mac):
     print(f"Changing MAC address for {interface} to {new_mac}")
+    #subprocess.call waits for command to execute
 
     subprocess.call(["ifconfig", f"{interface}", "down"])
     subprocess.call(["ifconfig", f"{interface}", "hw", "ether", f"{new_mac}"])
