@@ -31,7 +31,7 @@ def main():
     change_mac(interface, new_mac)
     #check that it swapped uses find_mac to find mac in the if config results
     ifconfig_result = check_interface(interface)
-    print(ifconfig_result)
+    #print(ifconfig_result)
     changed_mac = ifconfig_result
     print(confirm_changes(new_mac))
 
@@ -54,7 +54,7 @@ def find_mac(ifconfig_results):
     # Using re.search to find the MAC address
     pattern = rb'ether ([0-9a-fA-F:]{17})'
     mac_address_search_result = re.search(pattern, ifconfig_results)
-    print(f"mac_address_search_result: {mac_address_search_result}")
+    #print(f"mac_address_search_result: {mac_address_search_result}")
     if mac_address_search_result:
         mac_address = mac_address_search_result.group(1).decode()
         return mac_address
