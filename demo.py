@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import subprocess
-
+#set up some variables
 interface = input("interface: ")
 new_mac = input("new mac: ")
 
