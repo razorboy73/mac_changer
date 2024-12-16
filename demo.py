@@ -4,6 +4,8 @@ import subprocess
 interface = input("interface: ")
 new_mac = input("new mac: ")
 
+#print statement
+
 print("[+] changing MAC address for " + interface + " to "+ new_mac)
 
 #subprocess.call("ifconfig",shell=True)
